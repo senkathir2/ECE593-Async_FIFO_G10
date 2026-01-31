@@ -1,0 +1,82 @@
+# //  Questa Sim-64
+# //  Version 2025.2_1 win64 Jun 25 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do run.do
+# QuestaSim-64 vlog 2025.2_1 Compiler 2025.06 Jun 25 2025
+# Start time: 22:41:32 on Jan 30,2026
+# vlog -reportprogress 300 ./rtl/hw_top.sv ./TB/tb_top.sv 
+# ** Note: (vlog-220) 'C:/questasim64_2025.2_1/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module synchronizer
+# -- Compiling module wptr_handler
+# -- Compiling module rptr_handler
+# -- Compiling module fifo_mem
+# -- Compiling module asynchronous_fifo
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 22:41:33 on Jan 30,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# ** Note: (vsim-220) 'C:/questasim64_2025.2_1/win64/../modelsim.ini' is used as the ini file.
+# vsim work.top 
+# Start time: 22:41:33 on Jan 30,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-220) 'C:/questasim64_2025.2_1/win64/../modelsim.ini' is used as the ini file.
+# ** Warning: ./rtl/hw_top.sv(28): (vopt-2241) Connection width does not match width of port 'b_wptr'. The port definition is at: ./rtl/fifo_mem.sv(3).
+# ** Warning: ./rtl/hw_top.sv(28): (vopt-2241) Connection width does not match width of port 'b_rptr'. The port definition is at: ./rtl/fifo_mem.sv(3).
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading work.top(fast)
+# Time = 47: Comparison Passed: wr_data = a4 and rd_data = a4
+# Time = 51: Comparison Passed: wr_data = c6 and rd_data = c6
+# Time = 55: Comparison Passed: wr_data = 9e and rd_data = 9e
+# Time = 59: Comparison Passed: wr_data = be and rd_data = be
+# Time = 63: Comparison Passed: wr_data = 11 and rd_data = 11
+# Time = 67: Comparison Passed: wr_data = 45 and rd_data = 45
+# Time = 71: Comparison Passed: wr_data = b1 and rd_data = b1
+# Time = 75: Comparison Passed: wr_data = 79 and rd_data = 79
+# Time = 79: Comparison Passed: wr_data = 38 and rd_data = 38
+# Time = 83: Comparison Passed: wr_data = 2b and rd_data = 2b
+# Time = 87: Comparison Passed: wr_data = 00 and rd_data = 00
+# Time = 91: Comparison Passed: wr_data = 8b and rd_data = 8b
+# Time = 95: Comparison Passed: wr_data = 1a and rd_data = 1a
+# Time = 99: Comparison Passed: wr_data = f7 and rd_data = f7
+# Time = 103: Comparison Passed: wr_data = 2e and rd_data = 2e
+# Time = 155: Comparison Passed: wr_data = 38 and rd_data = 38
+# Time = 159: Comparison Passed: wr_data = 99 and rd_data = 99
+# Time = 163: Comparison Passed: wr_data = f7 and rd_data = f7
+# Time = 167: Comparison Passed: wr_data = 55 and rd_data = 55
+# Time = 171: Comparison Passed: wr_data = 0b and rd_data = 0b
+# Time = 175: Comparison Passed: wr_data = c9 and rd_data = c9
+# Time = 179: Comparison Passed: wr_data = e9 and rd_data = e9
+# Time = 183: Comparison Passed: wr_data = aa and rd_data = aa
+# Time = 187: Comparison Passed: wr_data = 0d and rd_data = 0d
+# Time = 191: Comparison Passed: wr_data = 8f and rd_data = 8f
+# Time = 195: Comparison Passed: wr_data = 57 and rd_data = 57
+# Time = 199: Comparison Passed: wr_data = 84 and rd_data = 84
+# Time = 203: Comparison Passed: wr_data = 92 and rd_data = 92
+# Time = 207: Comparison Passed: wr_data = 1c and rd_data = 1c
+# Time = 211: Comparison Passed: wr_data = 51 and rd_data = 51
+# ** Note: $finish    : ./TB/tb_top.sv(60)
+#    Time: 263 ns  Iteration: 0  Instance: /top
+# 1
+# Break at ./TB/tb_top.sv line 60
+add wave -position end  sim:/top/wdata_q
+# Drop insertion failed: sim:/top/wdata_q
+# (vsim-4027) Logging is not supported for Queue item: /top/wdata_q
+# Causality operation skipped due to absence of debug database file
+add wave -position insertpoint sim:/top/*
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/top/*'.
+# End time: 22:54:40 on Jan 30,2026, Elapsed time: 0:13:07
+# Errors: 0, Warnings: 2
