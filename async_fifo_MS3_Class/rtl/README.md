@@ -1,1 +1,1 @@
-# RTL Sources\n\nDesign files for MS3.
+# RTL Sources\n\nDesign files for MS2.

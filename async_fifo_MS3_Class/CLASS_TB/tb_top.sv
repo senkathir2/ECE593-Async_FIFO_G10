@@ -1,0 +1,48 @@
+module tb_top;
+
+    import fifo_pkg::*;
+
+    bit wclk, rclk;
+    bit wrst_n, rrst_n;
+
+    fifo_if vif(wclk, rclk, wrst_n, rrst_n);
+
+    fifo_test test;
+
+    asynchronous_fifo as_fifo (
+        .wclk(vif.wclk), 
+        .rclk(vif.rclk), 
+        .wrst_n(vif.wrst_n), 
+        .rrst_n(vif.rrst_n),
+        .w_en(vif.w_en),
+        .r_en(vif.r_en),
+        .data_in(vif.data_in),
+        .data_out(vif.data_out),
+        .full(vif.full),
+        .empty(vif.empty),
+        .full_3_4(vif.full_3_4),
+        .empty_1_4(vif.empty_1_4)
+    );
+
+    always #2ns wclk = ~wclk;
+    always #2ns rclk = ~rclk;
+
+    initial begin
+        wclk = 1'b0;
+        rclk = 1'b0;
+        vif.w_en = 0;
+        vif.r_en = 0;
+        wrst_n = 1'b0;
+        rrst_n = 0;
+        repeat(4) @(posedge wclk);
+        wrst_n = 1'b1;
+        repeat(20) @(posedge rclk);
+        rrst_n = 1;
+    end
+
+    initial begin
+        test = new(vif);
+        test.run();
+    end
+
+endmodule

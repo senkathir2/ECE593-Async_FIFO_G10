@@ -1,1 +1,4 @@
 *.zip
+/async_fifo_MS2_Class/work
+/async_fifo_MS3_Class/work
+*.wlf

@@ -1,0 +1,915 @@
+Coverage Report by instance with details
+# 
+# =================================================================================
+# === Instance: /tb_top/vif
+# === Design Unit: work.fifo_if
+# =================================================================================
+# Toggle Coverage:
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Toggles                         56        50         6    89.28%
+# 
+# ================================Toggle Details================================
+# 
+# Toggle Coverage for instance /tb_top/vif --
+# 
+#                                               Node      1H->0L      0L->1H  "Coverage"
+#                                               ---------------------------------------
+#                                           drvstart           0           0        0.00 
+#                                          empty_1_4           0           0        0.00 
+#                                             rrst_n           0           1       50.00 
+#                                             wrst_n           0           1       50.00 
+# 
+# Total Node Count     =         28 
+# Toggled Node Count   =         24 
+# Untoggled Node Count =          4 
+# 
+# Toggle Coverage      =      89.28% (50 of 56 bins)
+# 
+# =================================================================================
+# === Instance: /tb_top/as_fifo/sync_wptr
+# === Design Unit: work.synchronizer
+# =================================================================================
+# Statement Coverage:
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Statements                       5         5         0   100.00%
+# 
+# ================================Statement Details================================
+# 
+# Statement Coverage for instance /tb_top/as_fifo/sync_wptr --
+# 
+#     Line         Item                      Count     Source 
+#     ----         ----                      -----     ------ 
+#   File ./rtl/synchronizer.sv
+#     15              1                       7724     
+#     26              1                       7724     
+#     27              1                       7724     
+#     30              1                       7724     
+#     31              1                       7724     
+# Toggle Coverage:
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Toggles                        124       123         1    99.19%
+# 
+# ================================Toggle Details================================
+# 
+# Toggle Coverage for instance /tb_top/as_fifo/sync_wptr --
+# 
+#                                               Node      1H->0L      0L->1H  "Coverage"
+#                                               ---------------------------------------
+#                                              rst_n           0           1       50.00 
+# 
+# Total Node Count     =         62 
+# Toggled Node Count   =         61 
+# Untoggled Node Count =          1 
+# 
+# Toggle Coverage      =      99.19% (123 of 124 bins)
+# 
+# =================================================================================
+# === Instance: /tb_top/as_fifo/sync_rptr
+# === Design Unit: work.synchronizer
+# =================================================================================
+# Statement Coverage:
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Statements                       5         5         0   100.00%
+# 
+# ================================Statement Details================================
+# 
+# Statement Coverage for instance /tb_top/as_fifo/sync_rptr --
+# 
+#     Line         Item                      Count     Source 
+#     ----         ----                      -----     ------ 
+#   File ./rtl/synchronizer.sv
+#     15              1                       9055     
+#     26              1                       9055     
+#     27              1                       9055     
+#     30              1                       9055     
+#     31              1                       9055     
+# Toggle Coverage:
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Toggles                        124       123         1    99.19%
+# 
+# ================================Toggle Details================================
+# 
+# Toggle Coverage for instance /tb_top/as_fifo/sync_rptr --
+# 
+#                                               Node      1H->0L      0L->1H  "Coverage"
+#                                               ---------------------------------------
+#                                              rst_n           0           1       50.00 
+# 
+# Total Node Count     =         62 
+# Toggled Node Count   =         61 
+# Untoggled Node Count =          1 
+# 
+# Toggle Coverage      =      99.19% (123 of 124 bins)
+# 
+# =================================================================================
+# === Instance: /tb_top/as_fifo/wptr_h
+# === Design Unit: work.wptr_handler
+# =================================================================================
+# Branch Coverage:
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Branches                         2         2         0   100.00%
+# 
+# ================================Branch Details================================
+# 
+# Branch Coverage for instance /tb_top/as_fifo/wptr_h
+# 
+#     Line         Item                      Count     Source 
+#     ----         ----                      -----     ------ 
+#   File ./rtl/wptr_handler.sv
+# ------------------------------------IF Branch------------------------------------
+#     18                                      5399     Count coming in to IF
+#     18              1                          2     
+#     22              1                       5397     
+# Branch totals: 2 hits of 2 branches = 100.00%
+# 
+# 
+# Expression Coverage:
+#     Enabled Coverage              Bins   Covered    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Expressions                      2         2         0   100.00%
+# 
+# ================================Expression Details================================
+# 
+# Expression Coverage for instance /tb_top/as_fifo/wptr_h --
+# 
+#   File ./rtl/wptr_handler.sv
+# ----------------Focused Expression View-----------------
+# Line       40 Item    1  (g_wptr_next == {~g_rptr_sync[9:8],g_rptr_sync[7:0]})
+# Expression totals: 1 of 1 input term covered = 100.00%
+# 
+# ----------------Focused Expression View-----------------
+# Line       41 Item    1  ((b_wptr - b_rptr_sync) >= 384)
+# Expression totals: 1 of 1 input term covered = 100.00%
+# 
+# 
+# Statement Coverage:
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Statements                      12        12         0   100.00%
+# 
+# ================================Statement Details================================
+# 
+# Statement Coverage for instance /tb_top/as_fifo/wptr_h --
+# 
+#     Line         Item                      Count     Source 
+#     ----         ----                      -----     ------ 
+#   File ./rtl/wptr_handler.sv
+#     14              1                       5402     
+#     15              1                       3074     
+#     17              1                       5399     
+#     19              1                          2     
+#     20              1                          2     
+#     23              1                       5397     
+#     24              1                       5397     
+#     28              1                       7002     
+#     35              1                       7002     
+#     36              1                       7002     
+#     40              1                       5911     
+#     41              1                       6142     
+# Toggle Coverage:
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Toggles                        136       133         3    97.79%
+# 
+# ================================Toggle Details================================
+# 
+# Toggle Coverage for instance /tb_top/as_fifo/wptr_h --
+# 
+#                                               Node      1H->0L      0L->1H  "Coverage"
+#                                               ---------------------------------------
+#                                        wrap_around           0           0        0.00 
+#                                             wrst_n           0           1       50.00 
+# 
+# Total Node Count     =         68 
+# Toggled Node Count   =         66 
+# Untoggled Node Count =          2 
+# 
+# Toggle Coverage      =      97.79% (133 of 136 bins)
+# 
+# =================================================================================
+# === Instance: /tb_top/as_fifo/rptr_h
+# === Design Unit: work.rptr_handler
+# =================================================================================
+# Branch Coverage:
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Branches                         2         2         0   100.00%
+# 
+# ================================Branch Details================================
+# 
+# Branch Coverage for instance /tb_top/as_fifo/rptr_h
+# 
+#     Line         Item                      Count     Source 
+#     ----         ----                      -----     ------ 
+#   File ./rtl/rptr_handler.sv
+# ------------------------------------IF Branch------------------------------------
+#     17                                      6064     Count coming in to IF
+#     17              1                          2     
+#     21              1                       6062     
+# Branch totals: 2 hits of 2 branches = 100.00%
+# 
+# 
+# Expression Coverage:
+#     Enabled Coverage              Bins   Covered    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Expressions                      2         2         0   100.00%
+# 
+# ================================Expression Details================================
+# 
+# Expression Coverage for instance /tb_top/as_fifo/rptr_h --
+# 
+#   File ./rtl/rptr_handler.sv
+# ----------------Focused Expression View-----------------
+# Line       13 Item    1  (g_wptr_sync == g_rptr_next)
+# Expression totals: 1 of 1 input term covered = 100.00%
+# 
+# ----------------Focused Expression View-----------------
+# Line       14 Item    1  ((b_wptr_sync - b_rptr) <= 384)
+# Expression totals: 1 of 1 input term covered = 100.00%
+# 
+# 
+# Statement Coverage:
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Statements                      12        12         0   100.00%
+# 
+# ================================Statement Details================================
+# 
+# Statement Coverage for instance /tb_top/as_fifo/rptr_h --
+# 
+#     Line         Item                      Count     Source 
+#     ----         ----                      -----     ------ 
+#   File ./rtl/rptr_handler.sv
+#     11              1                       9096     
+#     12              1                       9073     
+#     13              1                      11924     
+#     14              1                       6143     
+#     16              1                       6064     
+#     18              1                          2     
+#     19              1                          2     
+#     22              1                       6062     
+#     23              1                       6062     
+#     27              1                          8     
+#     34              1                          8     
+#     35              1                          8     
+# Toggle Coverage:
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Toggles                        134       131         3    97.76%
+# 
+# ================================Toggle Details================================
+# 
+# Toggle Coverage for instance /tb_top/as_fifo/rptr_h --
+# 
+#                                               Node      1H->0L      0L->1H  "Coverage"
+#                                               ---------------------------------------
+#                                          empty_1_4           0           0        0.00 
+#                                             rrst_n           0           1       50.00 
+# 
+# Total Node Count     =         67 
+# Toggled Node Count   =         65 
+# Untoggled Node Count =          2 
+# 
+# Toggle Coverage      =      97.76% (131 of 134 bins)
+# 
+# =================================================================================
+# === Instance: /tb_top/as_fifo/fifom
+# === Design Unit: work.fifo_mem
+# =================================================================================
+# Branch Coverage:
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Branches                         4         4         0   100.00%
+# 
+# ================================Branch Details================================
+# 
+# Branch Coverage for instance /tb_top/as_fifo/fifom
+# 
+#     Line         Item                      Count     Source 
+#     ----         ----                      -----     ------ 
+#   File ./rtl/fifo_mem.sv
+# ------------------------------------IF Branch------------------------------------
+#     11                                      5399     Count coming in to IF
+#     11              1                       3070     
+#                                             2329     All False Count
+# Branch totals: 2 hits of 2 branches = 100.00%
+# 
+# ------------------------------------IF Branch------------------------------------
+#     17                                      6445     Count coming in to IF
+#     17              1                       3070     
+#                                             3375     All False Count
+# Branch totals: 2 hits of 2 branches = 100.00%
+# 
+# 
+# Condition Coverage:
+#     Enabled Coverage              Bins   Covered    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Conditions                       4         4         0   100.00%
+# 
+# ================================Condition Details================================
+# 
+# Condition Coverage for instance /tb_top/as_fifo/fifom --
+# 
+#   File ./rtl/fifo_mem.sv
+# ----------------Focused Condition View-------------------
+# Line       11 Item    1  (w_en & ~full)
+# Condition totals: 2 of 2 input terms covered = 100.00%
+# 
+# ----------------Focused Condition View-------------------
+# Line       17 Item    1  (r_en & ~empty)
+# Condition totals: 2 of 2 input terms covered = 100.00%
+# 
+# 
+# Statement Coverage:
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Statements                       4         4         0   100.00%
+# 
+# ================================Statement Details================================
+# 
+# Statement Coverage for instance /tb_top/as_fifo/fifom --
+# 
+#     Line         Item                      Count     Source 
+#     ----         ----                      -----     ------ 
+#   File ./rtl/fifo_mem.sv
+#     10              1                       5399     
+#     12              1                       3070     
+#     16              1                       6445     
+#     18              1                       3070     
+# Toggle Coverage:
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Toggles                         84        84         0   100.00%
+# 
+# ================================Toggle Details================================
+# 
+# Toggle Coverage for instance /tb_top/as_fifo/fifom --
+# 
+#                                               Node      1H->0L      0L->1H  "Coverage"
+#                                               ---------------------------------------
+# 
+# Total Node Count     =         42 
+# Toggled Node Count   =         42 
+# Untoggled Node Count =          0 
+# 
+# Toggle Coverage      =     100.00% (84 of 84 bins)
+# 
+# =================================================================================
+# === Instance: /tb_top/as_fifo
+# === Design Unit: work.asynchronous_fifo
+# =================================================================================
+# Toggle Coverage:
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Toggles                        248       208        40    83.87%
+# 
+# ================================Toggle Details================================
+# 
+# Toggle Coverage for instance /tb_top/as_fifo --
+# 
+#                                               Node      1H->0L      0L->1H  "Coverage"
+#                                               ---------------------------------------
+#                                          empty_1_4           0           0        0.00 
+#                                         raddr[0-8]           0           0        0.00 
+#                                             rrst_n           0           1       50.00 
+#                                         waddr[0-8]           0           0        0.00 
+#                                             wrst_n           0           1       50.00 
+# 
+# Total Node Count     =        124 
+# Toggled Node Count   =        103 
+# Untoggled Node Count =         21 
+# 
+# Toggle Coverage      =      83.87% (208 of 248 bins)
+# 
+# =================================================================================
+# === Instance: /tb_top
+# === Design Unit: work.tb_top
+# =================================================================================
+# Statement Coverage:
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Statements                      18        18         0   100.00%
+# 
+# ================================Statement Details================================
+# 
+# Statement Coverage for instance /tb_top --
+# 
+#     Line         Item                      Count     Source 
+#     ----         ----                      -----     ------ 
+#   File ./CLASS_TB/tb_top.sv
+#     27              1                      24136     
+#     27              2                      24135     
+#     28              1                      24136     
+#     28              2                      24135     
+#     31              1                          1     
+#     32              1                          1     
+#     33              1                          1     
+#     34              1                          1     
+#     35              1                          1     
+#     36              1                          1     
+#     37              1                          4     
+#     37              2                          4     
+#     38              1                          1     
+#     39              1                         20     
+#     39              2                         20     
+#     40              1                          1     
+#     44              1                          1     
+#     45              1                          1     
+# Toggle Coverage:
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Toggles                          8         6         2    75.00%
+# 
+# ================================Toggle Details================================
+# 
+# Toggle Coverage for instance /tb_top --
+# 
+#                                               Node      1H->0L      0L->1H  "Coverage"
+#                                               ---------------------------------------
+#                                             rrst_n           0           1       50.00 
+#                                             wrst_n           0           1       50.00 
+# 
+# Total Node Count     =          4 
+# Toggled Node Count   =          2 
+# Untoggled Node Count =          2 
+# 
+# Toggle Coverage      =      75.00% (6 of 8 bins)
+# 
+# =================================================================================
+# === Instance: /fifo_pkg
+# === Design Unit: work.fifo_pkg
+# =================================================================================
+# 
+# Assertion Coverage:
+#     Assertions                       1         1         0   100.00%
+# --------------------------------------------------------------------
+# Name                 File(Line)                   Failure      Pass 
+#                                                   Count        Count
+# --------------------------------------------------------------------
+# /fifo_pkg/fifo_generator/run/#anonblk#265642455#12#4#/#ublk#265642455#12/immed__14
+#                      ./CLASS_TB/fifo_generator.sv(14)
+#                                                         0          1
+# Branch Coverage:
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Branches                        12         6         6    50.00%
+# 
+# ================================Branch Details================================
+# 
+# Branch Coverage for instance /fifo_pkg
+# 
+#     Line         Item                      Count     Source 
+#     ----         ----                      -----     ------ 
+#   File ./CLASS_TB/fifo_scoreboard.sv
+# ------------------------------------IF Branch------------------------------------
+#     42                                        20     Count coming in to IF
+#     42              1                    ***0***     
+#                                               20     All False Count
+# Branch totals: 1 hit of 2 branches = 50.00%
+# 
+# ------------------------------------IF Branch------------------------------------
+#     47                                        20     Count coming in to IF
+#     47              1                    ***0***     
+#                                               20     All False Count
+# Branch totals: 1 hit of 2 branches = 50.00%
+# 
+# ------------------------------------IF Branch------------------------------------
+#     53                                      2991     Count coming in to IF
+#     53              1                    ***0***     
+#                                             2991     All False Count
+# Branch totals: 1 hit of 2 branches = 50.00%
+# 
+# ------------------------------------IF Branch------------------------------------
+#     59                                        20     Count coming in to IF
+#     59              1                    ***0***     
+#                                               20     All False Count
+# Branch totals: 1 hit of 2 branches = 50.00%
+# 
+# ------------------------------------IF Branch------------------------------------
+#     64                                        20     Count coming in to IF
+#     64              1                    ***0***     
+#                                               20     All False Count
+# Branch totals: 1 hit of 2 branches = 50.00%
+# 
+# ------------------------------------IF Branch------------------------------------
+#     68                                        20     Count coming in to IF
+#     68              1                         20     
+#                                          ***0***     All False Count
+# Branch totals: 1 hit of 2 branches = 50.00%
+# 
+# 
+# Condition Coverage:
+#     Enabled Coverage              Bins   Covered    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Conditions                       4         0         4     0.00%
+# 
+# ================================Condition Details================================
+# 
+# Condition Coverage for instance /fifo_pkg --
+# 
+#   File ./CLASS_TB/fifo_scoreboard.sv
+# ----------------Focused Condition View-------------------
+# Line       42 Item    1  (packet.packet.id != this.packet_out.id)
+# Condition totals: 0 of 1 input term covered = 0.00%
+# 
+#                                 Input Term   Covered  Reason for no coverage   Hint
+#                                -----------  --------  -----------------------  --------------
+#   (packet.packet.id != this.packet_out.id)         N  '_1' not hit             Hit '_1'
+# 
+#      Rows:       Hits  FEC Target                                  Non-masking condition(s)      
+#  ---------  ---------  --------------------                        -------------------------     
+#   Row   1:          1  (packet.packet.id != this.packet_out.id)_0  -                             
+#   Row   2:    ***0***  (packet.packet.id != this.packet_out.id)_1  -                             
+# 
+# ----------------Focused Condition View-------------------
+# Line       47 Item    1  (packet.packet.length != this.packet_out.length)
+# Condition totals: 0 of 1 input term covered = 0.00%
+# 
+#                                         Input Term   Covered  Reason for no coverage   Hint
+#                                        -----------  --------  -----------------------  --------------
+#   (packet.packet.length != this.packet_out.length)         N  '_1' not hit             Hit '_1'
+# 
+#      Rows:       Hits  FEC Target                                          Non-masking condition(s)      
+#  ---------  ---------  --------------------                                -------------------------     
+#   Row   1:          1  (packet.packet.length != this.packet_out.length)_0  -                             
+#   Row   2:    ***0***  (packet.packet.length != this.packet_out.length)_1  -                             
+# 
+# ----------------Focused Condition View-------------------
+# Line       53 Item    1  (packet.packet.payload[i] != this.packet_out.payload[i])
+# Condition totals: 0 of 1 input term covered = 0.00%
+# 
+#                                                 Input Term   Covered  Reason for no coverage   Hint
+#                                                -----------  --------  -----------------------  --------------
+#   (packet.packet.payload[i] != this.packet_out.payload[i])         N  '_1' not hit             Hit '_1'
+# 
+#      Rows:       Hits  FEC Target                                                  Non-masking condition(s)      
+#  ---------  ---------  --------------------                                        -------------------------     
+#   Row   1:          1  (packet.packet.payload[i] != this.packet_out.payload[i])_0  -                             
+#   Row   2:    ***0***  (packet.packet.payload[i] != this.packet_out.payload[i])_1  -                             
+# 
+# ----------------Focused Condition View-------------------
+# Line       59 Item    1  (packet.packet.parity != this.packet_out.parity)
+# Condition totals: 0 of 1 input term covered = 0.00%
+# 
+#                                         Input Term   Covered  Reason for no coverage   Hint
+#                                        -----------  --------  -----------------------  --------------
+#   (packet.packet.parity != this.packet_out.parity)         N  '_1' not hit             Hit '_1'
+# 
+#      Rows:       Hits  FEC Target                                          Non-masking condition(s)      
+#  ---------  ---------  --------------------                                -------------------------     
+#   Row   1:          1  (packet.packet.parity != this.packet_out.parity)_0  -                             
+#   Row   2:    ***0***  (packet.packet.parity != this.packet_out.parity)_1  -                             
+# 
+# 
+# 
+# 
+# 
+# Covergroup Coverage:
+#     Covergroups                      1        na        na    20.31%
+#         Coverpoints/Crosses          1        na        na        na
+#             Covergroup Bins         64        13        51    20.31%
+# -----------------------------------------------------------------------------------------------------------------------------------
+# Covergroup                                         RHS                           Metric       Goal       Bins    Status               
+#                                                                                                                                    
+# -----------------------------------------------------------------------------------------------------------------------------------
+#  TYPE /fifo_pkg/fifo_packet/fifo_packet__1/cg                                    20.31%        100          -    Uncovered            
+#     covered/total bins:                                                              13         64          -                      
+#     missing/total bins:                                                              51         64          -                      
+#     % Hit:                                                                       20.31%        100          -                      
+#     Coverpoint length                                                            20.31%        100          -    Uncovered            
+#         covered/total bins:                                                          13         64          -                      
+#         missing/total bins:                                                          51         64          -                      
+#         % Hit:                                                                   20.31%        100          -                      
+#         bin auto[0:3]                              0:3                                0          1          -    ZERO                 
+#         bin auto[4:7]                              4:7                                0          1          -    ZERO                 
+#         bin auto[8:11]                             8:11                               0          1          -    ZERO                 
+#         bin auto[12:15]                            12:15                              0          1          -    ZERO                 
+#         bin auto[16:19]                            16:19                              1          1          -    Covered              
+#         bin auto[20:23]                            20:23                              0          1          -    ZERO                 
+#         bin auto[24:27]                            24:27                              0          1          -    ZERO                 
+#         bin auto[28:31]                            28:31                              0          1          -    ZERO                 
+#         bin auto[32:35]                            32:35                              0          1          -    ZERO                 
+#         bin auto[36:39]                            36:39                              0          1          -    ZERO                 
+#         bin auto[40:43]                            40:43                              0          1          -    ZERO                 
+#         bin auto[44:47]                            44:47                              0          1          -    ZERO                 
+#         bin auto[48:51]                            48:51                              0          1          -    ZERO                 
+#         bin auto[52:55]                            52:55                              1          1          -    Covered              
+#         bin auto[56:59]                            56:59                              1          1          -    Covered              
+#         bin auto[60:63]                            60:63                              2          1          -    Covered              
+#         bin auto[64:67]                            64:67                              0          1          -    ZERO                 
+#         bin auto[68:71]                            68:71                              0          1          -    ZERO                 
+#         bin auto[72:75]                            72:75                              0          1          -    ZERO                 
+#         bin auto[76:79]                            76:79                              0          1          -    ZERO                 
+#         bin auto[80:83]                            80:83                              0          1          -    ZERO                 
+#         bin auto[84:87]                            84:87                              0          1          -    ZERO                 
+#         bin auto[88:91]                            88:91                              0          1          -    ZERO                 
+#         bin auto[92:95]                            92:95                              0          1          -    ZERO                 
+#         bin auto[96:99]                            96:99                              0          1          -    ZERO                 
+#         bin auto[100:103]                          100:103                            1          1          -    Covered              
+#         bin auto[104:107]                          104:107                            1          1          -    Covered              
+#         bin auto[108:111]                          108:111                            0          1          -    ZERO                 
+#         bin auto[112:115]                          112:115                            0          1          -    ZERO                 
+#         bin auto[116:119]                          116:119                            0          1          -    ZERO                 
+#         bin auto[120:123]                          120:123                            0          1          -    ZERO                 
+#         bin auto[124:127]                          124:127                            2          1          -    Covered              
+#         bin auto[128:131]                          128:131                            1          1          -    Covered              
+#         bin auto[132:135]                          132:135                            0          1          -    ZERO                 
+#         bin auto[136:139]                          136:139                            0          1          -    ZERO                 
+#         bin auto[140:143]                          140:143                            2          1          -    Covered              
+#         bin auto[144:147]                          144:147                            0          1          -    ZERO                 
+#         bin auto[148:151]                          148:151                            0          1          -    ZERO                 
+#         bin auto[152:155]                          152:155                            0          1          -    ZERO                 
+#         bin auto[156:159]                          156:159                            0          1          -    ZERO                 
+#         bin auto[160:163]                          160:163                            0          1          -    ZERO                 
+#         bin auto[164:167]                          164:167                            0          1          -    ZERO                 
+#         bin auto[168:171]                          168:171                            0          1          -    ZERO                 
+#         bin auto[172:175]                          172:175                            0          1          -    ZERO                 
+#         bin auto[176:179]                          176:179                            0          1          -    ZERO                 
+#         bin auto[180:183]                          180:183                            1          1          -    Covered              
+#         bin auto[184:187]                          184:187                            0          1          -    ZERO                 
+#         bin auto[188:191]                          188:191                            0          1          -    ZERO                 
+#         bin auto[192:195]                          192:195                            0          1          -    ZERO                 
+#         bin auto[196:199]                          196:199                            0          1          -    ZERO                 
+#         bin auto[200:203]                          200:203                            0          1          -    ZERO                 
+#         bin auto[204:207]                          204:207                            0          1          -    ZERO                 
+#         bin auto[208:211]                          208:211                            0          1          -    ZERO                 
+#         bin auto[212:215]                          212:215                            0          1          -    ZERO                 
+#         bin auto[216:219]                          216:219                            0          1          -    ZERO                 
+#         bin auto[220:223]                          220:223                            0          1          -    ZERO                 
+#         bin auto[224:227]                          224:227                            0          1          -    ZERO                 
+#         bin auto[228:231]                          228:231                            0          1          -    ZERO                 
+#         bin auto[232:235]                          232:235                            0          1          -    ZERO                 
+#         bin auto[236:239]                          236:239                            3          1          -    Covered              
+#         bin auto[240:243]                          240:243                            1          1          -    Covered              
+#         bin auto[244:247]                          244:247                            3          1          -    Covered              
+#         bin auto[248:251]                          248:251                            0          1          -    ZERO                 
+#         bin auto[252:255]                          252:255                            0          1          -    ZERO                 
+# Statement Coverage:
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Statements                     153       143        10    93.46%
+# 
+# ================================Statement Details================================
+# 
+# Statement Coverage for instance /fifo_pkg --
+# 
+#     Line         Item                      Count     Source 
+#     ----         ----                      -----     ------ 
+#   File ./CLASS_TB/fifo_packet.sv
+#     26     1 (CP=( 8))                         20     
+#     27     1 (CP=( 8))                       3011     
+#     28     1 (CP=( 8))                       2991     
+#     33     1 (CP=( 8))                         20     
+#     37     1 (CP=( 8))                         20     
+#     38     1 (CP=( 8))                         20     
+#     47     1 (CP=( 8))                         63     
+#   File ./CLASS_TB/fifo_generator.sv
+#     5               1                          1     
+#     8               1                          1     
+#     12              1                          1     
+#     12              2                         20     
+#     13              1                         20     
+#     15              1                         20     
+#     16              1                         20     
+#   File ./CLASS_TB/fifo_driver.sv
+#     10     1 (CP=( 8))                          1     
+#     11     1 (CP=( 8))                          1     
+#     18     1 (CP=( 8))                          1     
+#     19     1 (CP=( 8))                          1     
+#     24     1 (CP=( 8))                          1     
+#     25     1 (CP=( 8))                          1     
+#     26     1 (CP=( 8))                          1     
+#     27     1 (CP=( 8))                          1     
+#     28     1 (CP=( 8))                         21     
+#     29     1 (CP=( 8))                         20     
+#     30     1 (CP=( 8))                         20     
+#     31     1 (CP=( 8))                         20     
+#     36     1 (CP=( 8))                          1     
+#     36     2 (CP=( 8))                          2     
+#     42     1 (CP=( 8))                          2     
+#     43     1 (CP=( 8))                          1     
+#     44     1 (CP=( 8))                          1     
+#     45     1 (CP=( 8))                          1     
+#     48     1 (CP=( 8))                          2     
+#     49     1 (CP=( 8))                          1     
+#     62     1 (CP=( 8))                    ***0***     
+#     62     2 (CP=( 8))                    ***0***     
+#     64     1 (CP=( 8))                         20     
+#     66     1 (CP=( 8))                         20     
+#     67     1 (CP=( 8))                         20     
+#     69     1 (CP=( 8))                         20     
+#     70     1 (CP=( 8))                         20     
+#     72     1 (CP=( 8))                         20     
+#     72     2 (CP=( 8))                       2991     
+#     74     1 (CP=( 8))                       2991     
+#     76     1 (CP=( 8))                       2991     
+#     80     1 (CP=( 8))                         20     
+#     81     1 (CP=( 8))                         20     
+#     82     1 (CP=( 8))                         20     
+#     84     1 (CP=( 8))                         20     
+#     86     1 (CP=( 8))                         20     
+#   File ./CLASS_TB/fifo_monitor_out.sv
+#     9      1 (CP=( 8))                          1     
+#     12     1 (CP=( 8))                          1     
+#     13     1 (CP=( 8))                          1     
+#     17     1 (CP=( 8))                          1     
+#     18     1 (CP=( 8))                          1     
+#     20     1 (CP=( 8))                          1     
+#     22     1 (CP=( 8))                          1     
+#     23     1 (CP=( 8))                         21     
+#     26     1 (CP=( 8))                         21     
+#     28     1 (CP=( 8))                         20     
+#     29     1 (CP=( 8))                         20     
+#     30     1 (CP=( 8))                         20     
+#     41     1 (CP=( 8))                         21     
+#     42     1 (CP=( 8))                         20     
+#     43     1 (CP=( 8))                         20     
+#     45     1 (CP=( 8))                         20     
+#     46     1 (CP=( 8))                         20     
+#     47     1 (CP=( 8))                         20     
+#     49     1 (CP=( 8))                         20     
+#     50     1 (CP=( 8))                         20     
+#     51     1 (CP=( 8))                         20     
+#     53     1 (CP=( 8))                         20     
+#     55     1 (CP=( 8))                       3011     
+#     56     1 (CP=( 8))                       2991     
+#     57     1 (CP=( 8))                       2991     
+#     58     1 (CP=( 8))                       2991     
+#     59     1 (CP=( 8))                       2991     
+#     60     1 (CP=( 8))                       8973     
+#     60     2 (CP=( 8))                       8973     
+#     61     1 (CP=( 8))                       2991     
+#     64     1 (CP=( 8))                         20     
+#     65     1 (CP=( 8))                         20     
+#     66     1 (CP=( 8))                         20     
+#     67     1 (CP=( 8))                         20     
+#     69     1 (CP=( 8))                         20     
+#     71     1 (CP=( 8))                         20     
+#   File ./CLASS_TB/fifo_monitor_in.sv
+#     9      1 (CP=( 8))                          1     
+#     12     1 (CP=( 8))                          1     
+#     13     1 (CP=( 8))                          1     
+#     17     1 (CP=( 8))                          1     
+#     18     1 (CP=( 8))                          1     
+#     20     1 (CP=( 8))                          1     
+#     22     1 (CP=( 8))                          1     
+#     23     1 (CP=( 8))                         21     
+#     25     1 (CP=( 8))                         21     
+#     26     1 (CP=( 8))                         20     
+#     27     1 (CP=( 8))                         20     
+#     28     1 (CP=( 8))                         20     
+#     39     1 (CP=( 8))                         21     
+#     40     1 (CP=( 8))                         20     
+#     42     1 (CP=( 8))                         20     
+#     43     1 (CP=( 8))                         20     
+#     45     1 (CP=( 8))                         20     
+#     47     1 (CP=( 8))                       3011     
+#     48     1 (CP=( 8))                       2991     
+#     49     1 (CP=( 8))                       2991     
+#     52     1 (CP=( 8))                         20     
+#     53     1 (CP=( 8))                         20     
+#     54     1 (CP=( 8))                         20     
+#   File ./CLASS_TB/fifo_scoreboard.sv
+#     10              1                          1     
+#     12              1                          1     
+#     13              1                          1     
+#     17              1                          1     
+#     18              1                          1     
+#     23              1                          1     
+#     24              1                          1     
+#     29              1                          1     
+#     30              1                         21     
+#     31              1                         20     
+#     36              1                          1     
+#     37              1                          1     
+#     38              1                         21     
+#     40              1                         20     
+#     43              1                    ***0***     
+#     44              1                    ***0***     
+#     48              1                    ***0***     
+#     49              1                    ***0***     
+#     52              1                         20     
+#     55              1                    ***0***     
+#     60              1                    ***0***     
+#     61              1                    ***0***     
+#     65              1                    ***0***     
+#     68              1                         20     
+#     70              1                         20     
+#     72              1                         20     
+#     74              1                         20     
+#   File ./CLASS_TB/fifo_env.sv
+#     16     1 (CP=( 8))                          1     
+#     17     1 (CP=( 8))                          1     
+#     18     1 (CP=( 8))                          1     
+#     19     1 (CP=( 8))                          1     
+#     20     1 (CP=( 8))                          1     
+#     21     1 (CP=( 8))                          1     
+#     22     1 (CP=( 8))                          1     
+#     23     1 (CP=( 8))                          1     
+#     28     1 (CP=( 8))                          1     
+#     29     1 (CP=( 8))                          1     
+#     30     1 (CP=( 8))                          1     
+#     31     1 (CP=( 8))                          1     
+#     32     1 (CP=( 8))                          1     
+#   File ./CLASS_TB/fifo_test.sv
+#     7               1                          1     
+#     11              1                          1     
+#     12              1                          1     
+#     13              1                          1     
+# 
+# COVERGROUP COVERAGE:
+# -----------------------------------------------------------------------------------------------------------------------------------
+# Covergroup                                         RHS                           Metric       Goal       Bins    Status               
+#                                                                                                                                    
+# -----------------------------------------------------------------------------------------------------------------------------------
+#  TYPE /fifo_pkg/fifo_packet/fifo_packet__1/cg                                    20.31%        100          -    Uncovered            
+#     covered/total bins:                                                              13         64          -                      
+#     missing/total bins:                                                              51         64          -                      
+#     % Hit:                                                                       20.31%        100          -                      
+#     Coverpoint length                                                            20.31%        100          -    Uncovered            
+#         covered/total bins:                                                          13         64          -                      
+#         missing/total bins:                                                          51         64          -                      
+#         % Hit:                                                                   20.31%        100          -                      
+#         bin auto[0:3]                              0:3                                0          1          -    ZERO                 
+#         bin auto[4:7]                              4:7                                0          1          -    ZERO                 
+#         bin auto[8:11]                             8:11                               0          1          -    ZERO                 
+#         bin auto[12:15]                            12:15                              0          1          -    ZERO                 
+#         bin auto[16:19]                            16:19                              1          1          -    Covered              
+#         bin auto[20:23]                            20:23                              0          1          -    ZERO                 
+#         bin auto[24:27]                            24:27                              0          1          -    ZERO                 
+#         bin auto[28:31]                            28:31                              0          1          -    ZERO                 
+#         bin auto[32:35]                            32:35                              0          1          -    ZERO                 
+#         bin auto[36:39]                            36:39                              0          1          -    ZERO                 
+#         bin auto[40:43]                            40:43                              0          1          -    ZERO                 
+#         bin auto[44:47]                            44:47                              0          1          -    ZERO                 
+#         bin auto[48:51]                            48:51                              0          1          -    ZERO                 
+#         bin auto[52:55]                            52:55                              1          1          -    Covered              
+#         bin auto[56:59]                            56:59                              1          1          -    Covered              
+#         bin auto[60:63]                            60:63                              2          1          -    Covered              
+#         bin auto[64:67]                            64:67                              0          1          -    ZERO                 
+#         bin auto[68:71]                            68:71                              0          1          -    ZERO                 
+#         bin auto[72:75]                            72:75                              0          1          -    ZERO                 
+#         bin auto[76:79]                            76:79                              0          1          -    ZERO                 
+#         bin auto[80:83]                            80:83                              0          1          -    ZERO                 
+#         bin auto[84:87]                            84:87                              0          1          -    ZERO                 
+#         bin auto[88:91]                            88:91                              0          1          -    ZERO                 
+#         bin auto[92:95]                            92:95                              0          1          -    ZERO                 
+#         bin auto[96:99]                            96:99                              0          1          -    ZERO                 
+#         bin auto[100:103]                          100:103                            1          1          -    Covered              
+#         bin auto[104:107]                          104:107                            1          1          -    Covered              
+#         bin auto[108:111]                          108:111                            0          1          -    ZERO                 
+#         bin auto[112:115]                          112:115                            0          1          -    ZERO                 
+#         bin auto[116:119]                          116:119                            0          1          -    ZERO                 
+#         bin auto[120:123]                          120:123                            0          1          -    ZERO                 
+#         bin auto[124:127]                          124:127                            2          1          -    Covered              
+#         bin auto[128:131]                          128:131                            1          1          -    Covered              
+#         bin auto[132:135]                          132:135                            0          1          -    ZERO                 
+#         bin auto[136:139]                          136:139                            0          1          -    ZERO                 
+#         bin auto[140:143]                          140:143                            2          1          -    Covered              
+#         bin auto[144:147]                          144:147                            0          1          -    ZERO                 
+#         bin auto[148:151]                          148:151                            0          1          -    ZERO                 
+#         bin auto[152:155]                          152:155                            0          1          -    ZERO                 
+#         bin auto[156:159]                          156:159                            0          1          -    ZERO                 
+#         bin auto[160:163]                          160:163                            0          1          -    ZERO                 
+#         bin auto[164:167]                          164:167                            0          1          -    ZERO                 
+#         bin auto[168:171]                          168:171                            0          1          -    ZERO                 
+#         bin auto[172:175]                          172:175                            0          1          -    ZERO                 
+#         bin auto[176:179]                          176:179                            0          1          -    ZERO                 
+#         bin auto[180:183]                          180:183                            1          1          -    Covered              
+#         bin auto[184:187]                          184:187                            0          1          -    ZERO                 
+#         bin auto[188:191]                          188:191                            0          1          -    ZERO                 
+#         bin auto[192:195]                          192:195                            0          1          -    ZERO                 
+#         bin auto[196:199]                          196:199                            0          1          -    ZERO                 
+#         bin auto[200:203]                          200:203                            0          1          -    ZERO                 
+#         bin auto[204:207]                          204:207                            0          1          -    ZERO                 
+#         bin auto[208:211]                          208:211                            0          1          -    ZERO                 
+#         bin auto[212:215]                          212:215                            0          1          -    ZERO                 
+#         bin auto[216:219]                          216:219                            0          1          -    ZERO                 
+#         bin auto[220:223]                          220:223                            0          1          -    ZERO                 
+#         bin auto[224:227]                          224:227                            0          1          -    ZERO                 
+#         bin auto[228:231]                          228:231                            0          1          -    ZERO                 
+#         bin auto[232:235]                          232:235                            0          1          -    ZERO                 
+#         bin auto[236:239]                          236:239                            3          1          -    Covered              
+#         bin auto[240:243]                          240:243                            1          1          -    Covered              
+#         bin auto[244:247]                          244:247                            3          1          -    Covered              
+#         bin auto[248:251]                          248:251                            0          1          -    ZERO                 
+#         bin auto[252:255]                          252:255                            0          1          -    ZERO                 
+# 
+# TOTAL COVERGROUP COVERAGE: 20.31%  COVERGROUP TYPES: 1
+# 
+# ASSERTION RESULTS:
+# --------------------------------------------------------------------
+# Name                 File(Line)                   Failure      Pass 
+#                                                   Count        Count
+# --------------------------------------------------------------------
+# /fifo_pkg/fifo_generator/run/#anonblk#265642455#12#4#/#ublk#265642455#12/immed__14
+#                      ./CLASS_TB/fifo_generator.sv(14)
+#                                                         0          1
+# 
+# Total Coverage By Instance (filtered view): 75.67%
