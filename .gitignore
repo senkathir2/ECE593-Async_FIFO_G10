@@ -1,4 +1,6 @@
 *.zip
 /async_fifo_MS2_Class/work
 /async_fifo_MS3_Class/work
+/async_fifo_MS4_UVM/work
+/async_fifo_MS5_UVM/work
 *.wlf
